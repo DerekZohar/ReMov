@@ -1,0 +1,52 @@
+h2{
+    color: rgb(255, 145, 0)
+}
+
+.img-thumbnail{
+    height: 200px;  
+    width: 150px;
+}
+hr{
+    border-top: 2px solid #000;
+}
+
+#collapsibleNavbar{
+    margin-left: 100px;
+}
+
+#newsBtn, #categoryBtn, #aboutBtn{
+    color: rgb(255, 145, 0);
+}
+
+
+#userInfoSection{
+    height: 40px;
+}
+#userAvatar{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+#userSection{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+
+}
+#username{
+    height: 16px;
+    color: rgb(255, 145, 0);
+    font-size: 1em;
+    margin: 0px;
+}
+
+#status{
+    height: 12px;
+    color: white;
+    font-size: 12px;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+
+
