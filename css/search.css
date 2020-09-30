@@ -26,13 +26,25 @@ hr{
 
 #collapsibleNavbar{
     margin-left: 100px;
+    
 }
 
 #newsBtn, #categoryBtn, #aboutBtn{
+    padding-left: 10px;
+    padding-right: 50px;
     color: var(--main_color);
 }
 
-
+.dropbtn{
+    font-size: 24px;
+}
+#titleRemov{
+    font-weight: bold;
+    font-size: 24px;
+}
+#titleRemov:hover{
+    cursor: pointer;
+}
 #userInfoSection{
     height: 40px;
 }
