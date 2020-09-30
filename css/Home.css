@@ -1,3 +1,8 @@
+
+html,body{
+    background-color: #575555;
+    color: white;
+}
 .maintitle {
     color: #FF4E00 !important;
     margin-bottom: 15px !important;
@@ -28,15 +33,15 @@
 	padding-top: 5px;
 }
 
-p {
-	margin-bottom: 5px !important;
-	color: white;
-}
+	/* p {
+		margin-bottom: 5px !important;
+		color: white;
+	}
 
-h5 {
-	margin-bottom: 5px !important;
-	color: white !important;
-}
+	h5 {
+		margin-bottom: 5px !important;
+		color: white !important;
+	} */
 
 .newsposter {
 	widows: 200px;
@@ -47,9 +52,7 @@ h5 {
 	margin-bottom: 15px;
 }
 
-.body{
-    background-color: #575555;
-}
+
 
 .newsarea{
     margin-top: 20px;

@@ -4,6 +4,7 @@
 <head>
     <title>Bootstrap Example</title>
     <link rel="stylesheet" type="text/css" href="../css/Home.css">
+    <link rel="stylesheet" type="text/css" href="../css/search.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,88 +14,114 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header"><a class="navbar-brand" href="#">Brand</a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span
-                    class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
-                    class="icon-bar"></span><span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse navbar-menubuilder">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="">News</a>
+<body style="background-color: #575555; color: white;">
+    <nav class="navbar navbar-expand-md">
+        <!-- Brand -->
+        <a id="titleRemov" class="navbar-brand">ReMov</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a id="newsBtn" class="nav-link" href="#">News</a>
                 </li>
-                <li><a href="">Category</a>
+                <li class="nav-item">
+                    <a id="categoryBtn" class="nav-link" href="#">Category</a>
                 </li>
-                <li><a href="">About Us</a>
+                <li class="nav-item">
+                    <a id="aboutBtn" class="nav-link" href="#">About</a>
                 </li>
             </ul>
         </div>
-    </div>
-</div>
 
-<body class="container body">
-    <div class="row">
-        <div class="col-9">
-            <h5 class="maintitle">News</h5>
-            <div class="d-flex flex-row news">
-                <img class="newsposter" src="new.jpeg">
-                <div class="review">
-                    <h5>New_title_1</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, aspernatur eligendi error
-                        ut, voluptate quae quibusdam odit, illo dolor neque quam aperiam perferendis veniam quos
-                        deserunt nihil necessitatibus doloremque. Placeat!</p>
-                </div>
-            </div>
-            <div class="d-flex flex-row news">
-                <img class="newsposter" src="new.jpeg">
-                <div class="review">
-                    <h5>New_title_1</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, aspernatur eligendi error
-                        ut, voluptate quae quibusdam odit, illo dolor neque quam aperiam perferendis veniam quos
-                        deserunt nihil necessitatibus doloremque. Placeat!</p>
-                </div>
-            </div>
-            <div class="d-flex flex-row news">
-                <img class="newsposter" src="new.jpeg">
-                <div class="review">
-                    <h5>New_title_1</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, aspernatur eligendi error
-                        ut, voluptate quae quibusdam odit, illo dolor neque quam aperiam perferendis veniam quos
-                        deserunt nihil necessitatibus doloremque. Placeat!</p>
-                </div>
-            </div>
-            <div class="d-flex flex-row news">
-                <img class="newsposter" src="new.jpeg">
-                <div class="review">
-                    <h5>New_title_1</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, aspernatur eligendi error
-                        ut, voluptate quae quibusdam odit, illo dolor neque quam aperiam perferendis veniam quos
-                        deserunt nihil necessitatibus doloremque. Placeat!</p>
-                </div>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+        <div class="">
+            <div class="searchbar">
+                <img id="search_icon_btn" src="../assets/search-icon.png" alt="">
+                <input class="search_input" type="text" name="" placeholder="">
+                <button type="button" class="btn btn-secondary btn-sm" style="border-radius: 30px;">SEARCH</button>
+
             </div>
         </div>
-        <div class="col-3">
-            <h5 class="maintitle">Recent</h5>
-            <div class="d-flex flex-row movies">
-                <img class="poster" src="Arrival.jpg">
-                <div class="review">
-                    <h5>Arrival</h5>
-                    <p>Reviews: 100</p>
-                    <p>Score: 10</p>
+
+        <div id="userSection">
+            <div id="userInfoSection">
+                <p id="username">Thang</p>
+                <p id="status">New user</p>
+            </div>
+            <img id="userAvatar" src="../assets/user.png" alt="Avatar">
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <h5 class="maintitle">News</h5>
+                <div class="d-flex flex-row news">
+                    <img class="newsposter" src="../assets/new.jpeg">
+                    <div class="review">
+                        <h5>New_title_1</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, aspernatur eligendi error
+                            ut, voluptate quae quibusdam odit, illo dolor neque quam aperiam perferendis veniam quos
+                            deserunt nihil necessitatibus doloremque. Placeat!</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row news">
+                    <img class="newsposter" src="../assets/new.jpeg">
+                    <div class="review">
+                        <h5>New_title_1</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, aspernatur eligendi error
+                            ut, voluptate quae quibusdam odit, illo dolor neque quam aperiam perferendis veniam quos
+                            deserunt nihil necessitatibus doloremque. Placeat!</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row news">
+                    <img class="newsposter" src="../assets/new.jpeg">
+                    <div class="review">
+                        <h5>New_title_1</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, aspernatur eligendi error
+                            ut, voluptate quae quibusdam odit, illo dolor neque quam aperiam perferendis veniam quos
+                            deserunt nihil necessitatibus doloremque. Placeat!</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row news">
+                    <img class="newsposter" src="../assets/new.jpeg">
+                    <div class="review">
+                        <h5>New_title_1</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, aspernatur eligendi error
+                            ut, voluptate quae quibusdam odit, illo dolor neque quam aperiam perferendis veniam quos
+                            deserunt nihil necessitatibus doloremque. Placeat!</p>
+                    </div>
                 </div>
             </div>
-            <div class="d-flex flex-row movies">
-                <img class="poster" src="Arrival.jpg">
-                <div class="review">
-                    <h5>Arrival</h5>
-                    <p>Reviews: 100</p>
-                    <p>Score: 10</p>
+            <div class="col-3">
+                <h5 class="maintitle">Recent</h5>
+                <div class="d-flex flex-row movies">
+                    <img class="poster" src="../assets/Arrival.jpg">
+                    <div class="review">
+                        <h5>Arrival</h5>
+                        <p>Reviews: 100</p>
+                        <p>Score: 10</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row movies">
+                    <img class="poster" src="../assets/Arrival.jpg">
+                    <div class="review">
+                        <h5>Arrival</h5>
+                        <p>Reviews: 100</p>
+                        <p>Score: 10</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
